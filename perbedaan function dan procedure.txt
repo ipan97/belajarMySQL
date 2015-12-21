@@ -1,0 +1,88 @@
+﻿
+Perbedaan Fungsi dan Prosedur Pada Algoritma Pemograman
+
+Prosedur
+
+Prosedur adalah suatu program terpisah dalam blok sendiri yang berfungsi sebagai subprogram (program bagian). Diawali dengan kata cadangan “Procedure” didalam bagian deklarasi prosedur. Procedure biasanya bersifat suatu aktifitas seperti menghitung luas, meghitung faktorial, mencari nilai maksimum/minimum,dsb.  Prosedur banyak digunakan pada program yang terstruktur karena :
+
+    Merupakan penerapan konsep program modular, yaitu memecah-mecah program yang rumit menjadi program-program bagian yang lebih sederhana dalam bentuk prosedur-prosedur.
+    Untuk hal-hal yang sering dilakukan berulang-ulang, cukup dituliskan sekali saja dalam prosedur dan dapat dipanggil atau dipergunakan sewaktu-waktu bila diperlukan.
+
+Notasi Algoritmik
+
+program tukar
+
+kamus : A,R : integer {}
+
+procedure tukar (in/out : A,R : integer)
+
+algoritma : input (A,R)
+
+Tukar (A,R)
+
+Output (A,R)
+
+procedure tukar2(in/out : A,R : integer)
+
+kamus lokal : B : integer
+
+algoritma : B ← A
+
+A ← R
+
+R ← A
+
+FUNGSI 
+
+Fungsi sama seperti halnya dengan procedure, namun tetap ada perbedaannya yaitu fungsi mempunyai output dengan tipe variabel yang kita tentukan. Dan cara pemanggilan variabel ada 2 macam dalam pascal. Yaitu :
+
+o Mengoutputkan nilai dari fungsi tersebut Contoh : Writln (namafungsi(parameter));
+
+o Dengan assignment Variabel1 := namafungsi(parameter);
+
+Berbeda dengan procedure yang bisa tidak menggunakan parameter, fungsi harus menggunakan parameter dalam penggunaannya.
+
+algoritmik
+
+program faktorial
+
+kamus : a : integer
+
+function faktor (a : integer) → integer
+
+algoritma
+
+input (a)
+
+output (faktor(a))
+
+function faktor (a:integer) →integer
+
+kamus :
+
+i, hasil : integer
+
+algoritma :
+
+hasil ← 1
+
+i traversal [a..1]
+
+hasil ← hasil * i
+
+faktor ← hasil
+
+FUNCTION identifier (daftar parameter) : type ;
+
+Blok fungsi juga diawali dengan kata cadangan Begin dan di akhiri dengan kata cadangan End dan titik koma.
+
+Perbedaan fungsi dengan prosedur adalah :
+
+    Pada fungsi, nilai yang dikirimkan balik terdapat pada nama fungsinya ( kalau pada prosedur pada parameter yang dikirimkan secara acuan).
+    Karena nilai balik berada di nama fungsi tersebut, maka fungsi tersebut dapat langsung digunakan untuk dicetak hasilnya. Atau nilai fungsi tersebut dapat juga langsung dipindahkan ke pengenal variable yang lainnya.
+    Pada prosedur, nama prosedur tidak dapat digunakan lagsung, yang dapat langsung digunakan adalah parameternya yang mengandung nilai balik.
+
+Mengapa menggunakan prosedur dan fungsi ?
+
+    Memecahkan program yang rumit dan besar menjadi program-program yang lebih sederhana.
+    Untuk aktivitas yang dilakukan lebih dari satu kali / sering dilakukan berulang-ulang.

@@ -1,0 +1,6 @@
+Syntak/bentuk umum
+SELECT field [optional fungsi agresi]
+FROM namatabel WHERE kondisi/seleksi GROUP BY field [OPRIONAL with by group by]
+
+Having digunakan untuk menyeleksi satu fungsi agregasi
+Untuk random bisa menggunakan ORDER BY RAND()
